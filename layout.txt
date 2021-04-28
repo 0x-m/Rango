@@ -1,0 +1,136 @@
+=========================== Entities ============================
+user:
+    id
+    username
+    password
+    firstname
+    lastname
+    email
+    cell_phone
+    bussiness_phone
+    address
+    postal_code
+    avatar
+    date_joined
+    is_active
+    is_chief
+    is_vendor
+    is_customer
+    [actions: Create, Read, Update, Delete (CRUD) + authentication and authorization ]
+
+NOTE: every user should have a unique profile page at URL: https://www.site_name.domain/username
+
+vendor(user):
+    shop_name
+    payment_info
+    fee_method
+    list_of_stocks
+    [actions: add, edit and delete stuffs]
+
+NOTE: every vendor should have a unique page at URL: https://www.site_name.domain/shop_name
+
+
+chief(user):
+    ...
+    [actions: add edit delete users]
+
+
+customer(user):
+    payment_info
+
+    [actions: add, edit, delete orders]
+
+category:
+    name
+    slug
+    description
+NOTE: every category should have a unique page at URL: https://www.site_name.domain/category/slug
+
+
+stock:
+    vendor
+    category
+    name
+    brand
+    tax
+    hashtags
+    description
+    price
+    image(s)
+    off_signal
+    null_signal
+    total_count
+    date_created
+    stars: 0 to 5 ranking 0.5 per step
+    comments
+NOTE: every stock should have unique page at URL: https://www.site_name.domain/shop_name/stock_id
+
+comment:
+    user
+    stock
+    title
+    body
+
+stars:
+    stock
+    user
+    rank   
+
+order:
+    id
+    vendor
+    customer
+    title
+    stock(s)
+
+    date_created
+    status
+NOTE: every order should have unique page at URL: https://www.site_name.domain/orders/order_id
+
+
+NOTE:a customer can ((NOT)) purchase stock belonging to different vendors at one order
+
+
+
+----------------PRICING-------------------
+9 database models + full panel + commentary and like sys + ranking + authentication and authorization + UI/UX (about 8,050,000 tomans)
+main(index) page (150,000 tomans)
+vendor shop page (200,000 tomans)
+payment configuration + fee setup (for saman, melli, banks) (500,000 tomans)
+SEO optimizations (FREE)
+    __________________________________________________________________________
+                                    total: 8,900,000 tomans
+
+
+---------------Misc options-----------------
+Blog (600,000 tomans)
+REST API (vary form 250,000 to 1,000,000 tomans) 
+OAuth authentication (using google microsoft and facebook) (600,000 tomans)
+Cookie setup for data analysis and marketing (300,000 tomans)
+Advnced Search API (300,000 tomans)
+duo-lingual: persian/english (2,000,000 tomans)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
